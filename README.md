@@ -6,3 +6,11 @@
 ## About
 
 - stack: strapi + graphql + react
+
+## Backend
+
+- GraphQL Apollo sandbox is at `http://localhost:1337/graphql`
+
+## Frontend
+
+- Apollo client + GraphQL used for data fetching

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const { data, error, loading } = useFetchAll<Review>(
-    `${process.env.REACT_APP_STRAPI_BASE_URL}/reviews`
+    `${process.env.REACT_APP_STRAPI_BASE_URL}/api/reviews`
   );
 
   if (loading) return <p>Loading...</p>;

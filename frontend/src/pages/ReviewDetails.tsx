@@ -6,7 +6,7 @@ import { formatReviewBody } from "../helpers/review-helper";
 const ReviewDetails = () => {
   const { documentId } = useParams();
   const { data, error, loading } = useFetchOne<Review>(
-    `${process.env.REACT_APP_STRAPI_BASE_URL}/reviews/${documentId}`
+    `${process.env.REACT_APP_STRAPI_BASE_URL}/api/reviews/${documentId}`
   );
 
   if (loading) return <p>Loading...</p>;
