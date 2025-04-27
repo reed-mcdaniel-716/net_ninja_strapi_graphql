@@ -22,7 +22,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/details/:documentId" element={<ReviewDetails />} />
-            <Route path="/category/:id" element={<Category />} />
+            <Route path="/category/:documentId" element={<Category />} />
           </Routes>
         </div>
       </ApolloProvider>

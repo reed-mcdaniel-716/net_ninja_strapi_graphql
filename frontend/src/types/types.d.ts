@@ -1,7 +1,10 @@
 interface Paragraph {
   children: [{ text: string; type: string; bold: boolean }];
 }
-
+interface Category {
+  documentId: string;
+  name: string;
+}
 interface Review {
   id: number;
   documentId: string;
@@ -11,6 +14,7 @@ interface Review {
   createdAt: string;
   updatedAt: string;
   publishedAt: string;
+  categories?: Category[];
 }
 
 interface StrapiRestApiAllResponse<T> {
